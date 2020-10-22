@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #e3f3f0
+}
+
+ /* Começo Navbar */ 
+
+.navbar {
+    background-color: #ffffff;
+    color: white;
+    height: 100px;
+    border-bottom: 4px rgb(4, 4, 3) solid;  
+}
+
+.container {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 330px;
+    float: left;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+.login_ico {
+    float: right;
+    width: 42px;
+    position: absolute;
+    right: 90px;
+    top: 15px;
+}
+
+.login_ico:hover {
+     transform: scale(1.1);
+     cursor: pointer;
+}   
+
+.login_label {
+    color: black;
+    float: right;
+    position: absolute;
+    right: 88px;
+    top: 62px;
+    font-family:'Kanit', sans-serif;
+}
+
+.register_ico {
+    float: right;
+    width: 49px;
+    position: absolute;
+    right: 170px;
+    top: 15px;
+}
+
+.register_ico:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.register_label {
+    color: black;
+    float: right;
+    position: absolute;
+    right: 166px;
+    top: 62px;
+    font-family:'Kanit', sans-serif;
+}
+
+.send_recipe {
+    float: right;
+    width: 45px;
+    position: absolute;
+    right: 350px;
+    top: 15px;
+}
+
+.send_recipe:hover{
+    transform: scale(1.1);
+     cursor: pointer;
+}
+
+.send_label {
+    color: black;
+    float: right;
+    position: absolute;
+    right: 319px;
+    top: 62px;
+    font-family:'Kanit', sans-serif;
+}
+
+/* Fim Navbar */
+
