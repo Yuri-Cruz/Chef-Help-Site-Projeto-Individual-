@@ -1,7 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #e3f3f0
+    margin: 0;  
+    border-bottom: black px solid;
+    background-color: black
 }
 
  /* Começo Navbar */ 
@@ -94,3 +95,76 @@ body {
 
 /* Fim Navbar */
 
+/* Começo receitas */
+
+.recipes {
+    background-color: rgb(177, 200, 243);
+    color: white;
+    height: 600px;
+    border-bottom: 4px rgb(4, 4, 3) solid;  
+}
+
+
+/* Começo Footer */
+
+.footer {
+    background-color: #ffffff;
+    color: white;
+    height: 150px;
+    border-bottom: 4px rgb(4, 4, 3) solid;
+}
+
+.logoFooter {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    top: 735px;
+}
+
+.h3Footer {
+    color: white;
+    position: absolute;
+    right: 430px;
+    top: 840px; 
+    font-family:'Kanit', sans-serif;
+}
+
+.email {
+    color: black;
+    position: absolute;
+    right: 107px;
+    top: 750px;
+    font-weight: bold;
+    font-family:'Kanit', sans-serif;
+}
+
+.tel {
+    color: black;
+    position: absolute;
+    right: 204px;
+    top: 780px;
+    font-weight: bold;
+    font-family:'Kanit', sans-serif;
+}
+
+.infoContato {
+    color: black;
+    position: absolute;
+    right: 222px;
+    top: 710px;
+    font-family:'Kanit', sans-serif;
+}
+
+.emailLogo {
+    position: absolute;
+    right: 300px;
+    top: 775px;
+    height: 20px;
+}
+
+.telLogo {
+    position: absolute;
+    right: 300px;
+    top: 805px;
+    height: 20px;
+}
