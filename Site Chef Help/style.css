@@ -1,9 +1,41 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;  
-    border-bottom: black px solid;
-    background-color: black
+* {
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-image: url("imagens/fundosite.jpg")
+ 
+}
+
+
+::-webkit-scrollbar {
+    width: 18px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #d6d6d6;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 15px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, rgb(119, 119, 119), rgb(97, 87, 87));
+    border-radius: 5px;
+    border: 1px black solid;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, rgb(60, 60, 60), rgb(11, 13, 14));
+    border: 1px rgb(38, 37, 37) solid;
+  }
 
  /* Começo Navbar */ 
 
@@ -11,12 +43,12 @@ body {
     background-color: #ffffff;
     color: white;
     height: 100px;
-    border-bottom: 4px rgb(4, 4, 3) solid;  
+    border-bottom: 2px rgb(4, 4, 3) solid;  
 }
 
 .container {
     width: 80%;
-    height: 100px;
+    height: auto;
     margin: auto;
 }
 
@@ -27,144 +59,166 @@ body {
     margin-left: -50px;
 }
 
-.login_ico {
+.item-box {
     float: right;
-    width: 42px;
-    position: absolute;
-    right: 90px;
-    top: 15px;
-}
-
-.login_ico:hover {
-     transform: scale(1.1);
-     cursor: pointer;
-}   
-
-.login_label {
+    width: 12%;
+    text-align: center;
+    font-family: 'Kanit', sans-serif; ;
+    margin: 0.5em;
     color: black;
-    float: right;
-    position: absolute;
-    right: 88px;
-    top: 62px;
-    font-family:'Kanit', sans-serif;
+    margin-top: 15px;
 }
 
-.register_ico {
-    float: right;
-    width: 49px;
-    position: absolute;
-    right: 170px;
-    top: 15px;
+.item-box img {
+    width: 48px;
+    margin: 0;
 }
 
-.register_ico:hover {
+.item-box img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.register_label {
-    color: black;
-    float: right;
-    position: absolute;
-    right: 166px;
-    top: 62px;
-    font-family:'Kanit', sans-serif;
+.item-box p {
+     margin: 0;
 }
 
-.send_recipe {
-    float: right;
-    width: 45px;
+.search-box {
     position: absolute;
-    right: 350px;
-    top: 15px;
+    top: 49px;
+    left: 700px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    border: black 1px solid;
+
 }
 
-.send_recipe:hover{
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 350px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.search-btn:hover {
     transform: scale(1.1);
-     cursor: pointer;
-}
-
-.send_label {
-    color: black;
-    float: right;
-    position: absolute;
-    right: 319px;
-    top: 62px;
-    font-family:'Kanit', sans-serif;
 }
 
 /* Fim Navbar */
 
-/* Começo receitas */
+/* Content */
 
-.recipes {
-    background-color: rgb(177, 200, 243);
-    color: white;
-    height: 600px;
-    border-bottom: 4px rgb(4, 4, 3) solid;  
+.content {
+    justify-content: center;
+    display: flex;
 }
 
+.contentElements {
+    height: 500px;
+    width: 1200px;
+    border: rgb(119, 119, 119) 6px solid;
+    background-color: rgb(213, 213, 213);
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
 
-/* Começo Footer */
+.box-slide {
+    border: rgb(197, 197, 197) 1px solid;
+    height: 435px;
+    width: 500px;
+    margin: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.box-slide h2 {
+    margin: 0;
+    height: 50px;
+}
+
+.pratos {
+    height: 202px;
+    width: 302px;
+    float: left; 
+    border-radius: 4px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(172, 171, 171);
+    
+}
+
+.pratos img {
+    height: 200px;
+    width: 300px;
+    border-radius: 4px;
+}
+   
+
+
+
+/* Fim Content */
+
+
+/* Footer */
 
 .footer {
-    background-color: #ffffff;
-    color: white;
-    height: 150px;
-    border-bottom: 4px rgb(4, 4, 3) solid;
+position: static;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: white;
+color: black;
+text-align: center;
+border-top: black 2px solid;
+font-family: 'Kanit', sans-serif;
+
 }
 
-.logoFooter {
-    width: 200px;
-    position: absolute;
-    left: 20px;
-    top: 735px;
+.footerLogo {
+    text-align: center;
+    overflow: auto;
 }
 
-.h3Footer {
-    color: white;
-    position: absolute;
-    right: 430px;
-    top: 840px; 
-    font-family:'Kanit', sans-serif;
+.footerLogo img {
+    width: 250px;
+    margin-top: 5px;
 }
 
-.email {
-    color: black;
-    position: absolute;
-    right: 107px;
-    top: 750px;
-    font-weight: bold;
-    font-family:'Kanit', sans-serif;
+.footerLogo p {
+    margin-top: -25px;
+    font-size: larger;
 }
 
-.tel {
-    color: black;
-    position: absolute;
-    right: 204px;
-    top: 780px;
-    font-weight: bold;
-    font-family:'Kanit', sans-serif;
-}
-
-.infoContato {
-    color: black;
-    position: absolute;
-    right: 222px;
-    top: 710px;
-    font-family:'Kanit', sans-serif;
-}
-
-.emailLogo {
-    position: absolute;
-    right: 300px;
-    top: 775px;
-    height: 20px;
-}
-
-.telLogo {
-    position: absolute;
-    right: 300px;
-    top: 805px;
-    height: 20px;
-}
+/* Fim Footer */

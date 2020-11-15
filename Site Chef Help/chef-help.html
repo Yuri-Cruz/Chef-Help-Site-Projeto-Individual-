@@ -7,51 +7,109 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
     <title>Chef Help </title>
 
 </head>
 <body>
-    
+
+
     <div class="navbar">
         <div class="container">
-           
-            <img class="logo" src="imagens/logo-site.png">
-            
-            <img class="login_ico" src="imagens/login-icon.png">
-            <label class="login_label">Entrar</label>
+          
+            <div class="divLogo"></div>
+                 <img class="logo" src="imagens/logo-site.png">
+           </div>
 
-            <img class="register_ico" src="imagens/register-icon.png">
-            <label class="register_label">Registrar</label>
+           <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Encontre uma receita">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+         </div>
 
-            <img class="send_recipe" src="imagens/send-recipe.jpg">
-            <label class="send_label">Enviar Receita</label>
-        
-        </div>
-    </div>
-
-    <div class="recipes">
-        <div class="recipeBox">
-            <div class="recipeBorder">
-
+            <div class="item-box">
+                <img src="imagens/login-icon.png">
+                <p>Entrar</p>
             </div>
-        </div>
+           
+            <div class="item-box">
+                <img src="imagens/send-recipe.jpg">
+                <p>Enviar Receita</p>
+            </div>
 
+        </div>
     </div>
+
+    <div class="content">
+        <div class="contentElements">
+            <div class="box-slide">
+                <h2>Pratos mais Visitados</h2>
+               <div class="pratos">
+                <div><img src="imagens/carrosel-imgs/pratos1.jpg" alt="">
+                    <h2>Frango a parmegiana</h2><p>Um dos pratos mais amados<br>pelo brasileiro</p></div>
+                <div><img src="imagens/carrosel-imgs/pratos2.jpg" alt="">
+                    <h2>Panqueca de carne móida</h2><p>Um clássico no almoço<br>de fim de semana!</p></div>
+                <div><img src="imagens/carrosel-imgs/pratos3.jpg" alt="">
+                    <h2>Strogonoff de Frango</h2><p>Um prato que nunca falta na casa do brasileiro</p></div>
+                <div><img src="imagens/carrosel-imgs/pratos4.jpg" alt="">
+                    <h2>Ovo Frito</h2><p>Sempre quando não há o que comer,<br>tem um ovo na geladeira para nos salvar!</p></div>
+                <div><img src="imagens/carrosel-imgs/pratos5.jpg" alt="">
+                    <h2>Batata Gratinada</h2><p>Existe vários tipos de receita com batatas, e a gratinada é uma das melhores</p></div>
+                </div>
+            </div>
+            
+            <div class="box-slide">
+                <h2>Sobremesas mais Visitadas</h2>
+                <div class="pratos">
+                    <div><img src="imagens/carrosel-imgs/sobremesas1.jpg" alt="">
+                        <h2>Pavê de Chocolate</h2><p>Como sempre diz o meu tio na ceia de final de ano: "É pavê ou "pacume"?</p></div>
+                    <div><img src="imagens/carrosel-imgs/sobremesas2.jpg" alt="">
+                        <h2>Bolo de Cenoura</h2><p>Uma ótima sobremesa após uma refeição em familía.</p></div>
+                    <div><img src="imagens/carrosel-imgs/sobremesas3.jpg" alt="">
+                        <h2>Mousse de Leite Ninho</h2><p>Sobremesa para quem está fazendo dieta, leve e delicioso!</p></div>
+                    <div><img src="imagens/carrosel-imgs/sobremesas4.jpg" alt="">
+                        <h2>Bolinho de Chuva</h2><p>Uma sobremesa perfeita com café.</p></div>
+                    <div><img src="imagens/carrosel-imgs/sobremesas5.jpg" alt="">
+                        <h2>Brigadeiro</h2><p>Quem nunca comeu um brigadeiro? Nunca falta em uma festa de aniversário.</p></div>
+                </div>
+            </div>
+
+            <div class="box-slide">
+                <h2>Lanches mais visitados</h2>
+                <div class="pratos">
+                    <div><img src="imagens/carrosel-imgs/salgados1.jpg" alt="">
+                        <h2>Coxinha de Frango</h2><p>Quem nunca comeu uma coxinha na rua ou em uma festa? Um dos favoritos do brasileiro</p></div>
+                    <div><img src="imagens/carrosel-imgs/salgados2.jpg" alt="">
+                        <h2>Kibe</h2><p>Delicioso e uma ótima combinação com a coxinha!</p></div>
+                    <div><img src="imagens/carrosel-imgs/salgados3.jpg" alt="">
+                        <h2>Torta de Liquidificador</h2><p>Uma massa perfeita para um café da tarde em familía</p></div>
+                    <div><img src="imagens/carrosel-imgs/salgados4.jpg" alt="">
+                        <h2>Pão com Manteiga</h2><p>Um lanche padrão no café da manhã do brasileiro, e bem acompanhando com um café ou leite!</p></div>
+                    <div><img src="imagens/carrosel-imgs/salgados5.jpg" alt="">
+                        <h2>Pizza de Pepperoni<h2><p>Um lanche clássico durante o happy hour, o mundo inteiro ama!</p></div> 
+                </div>
+            </div>
+
+        </div>
+   </div>
 
     <div class="footer">
-        <div class="footerBox">
-            <img class="logoFooter" src="imagens/logo-site.png">
-            <div class="footerElements">
-                <h3 class="h3Footer">© 2020 Chef Help. Todos os Direitos Reservados</h3>
-                <h2 class="infoContato">Contato:</h2>
-                <h4 class="email">chefhelp@contato.com.br</h4>
-                <h4 class="tel">3006-7900</h4>
-                <img class="telLogo" src="imagens/tel.png">
-                <img class="emailLogo" src="imagens/email.png">
+        <div class="container">
+            <div class="footerLogo">
+                <img src="imagens/logo-site.png">
+                <p>&copy; Copyright Chef Help 2020 - Todos os Direitos Reservados</p>
             </div>
         </div>
-
+        
     </div>
-    
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+
 </body>
 </html>
+
