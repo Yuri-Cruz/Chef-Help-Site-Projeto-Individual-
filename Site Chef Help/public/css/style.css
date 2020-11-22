@@ -1,0 +1,587 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Kanit', sans-serif;
+ 
+}
+
+
+::-webkit-scrollbar {
+    width: 18px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #d6d6d6;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 15px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, rgb(119, 119, 119), rgb(97, 87, 87));
+    border-radius: 5px;
+    border: 1px black solid;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right, rgb(60, 60, 60), rgb(11, 13, 14));
+    border: 1px rgb(38, 37, 37) solid;
+  }
+
+ /* Começo Navbar */ 
+
+.navbar {
+    background-color: #ffffff;
+    color: white;
+    height: 100px;
+    border-bottom: 2px rgb(4, 4, 3) solid;  
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.logo {
+    width: 330px;
+    float: left;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+.item-box {
+    float: right;
+    width: 12%;
+    text-align: center;
+    font-family: 'Kanit', sans-serif; 
+    margin: 0.5em;
+    color: black;
+    margin-top: 15px;
+}
+
+.item-box img {
+    width: 48px;
+    margin: 0;
+}
+
+.item-box img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.item-box p {
+     margin: 0;
+}
+
+.search-box {
+    position: absolute;
+    top: 49px;
+    left: 720px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 10px;
+    border: black 1px solid;
+
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 350px;
+    font-family: 'Kanit', sans-serif;
+    text-transform: lowercase;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Fim Navbar */
+
+/* Content */
+
+.content {
+    justify-content: center;
+    display: flex;
+}
+
+.contentElements {
+    height: 500px;
+    width: 1200px;
+    border: rgb(119, 119, 119) 6px solid;
+    background-color: rgb(213, 213, 213);
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.box-slide {
+    border: rgb(197, 197, 197) 1px solid;
+    height: 435px;
+    width: 500px;
+    margin: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.box-slide h2 {
+    margin: 0;
+    height: 50px;
+}
+
+.pratos {
+    height: 202px;
+    width: 302px;
+    float: left; 
+    border-radius: 4px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(172, 171, 171);
+    
+}
+
+.pratos img {
+    height: 200px;
+    width: 300px;
+    border-radius: 4px;
+}
+   
+.noticias {
+    justify-content: center;
+    display: flex;
+}
+
+.noticiasArea {
+    background-color: rgb(228, 227, 227);
+    height: 650px;
+    width: 1200px;
+    text-align: center;
+    border: 6px solid rgb(136, 136, 136);
+    margin: 20px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.textoNoticias {
+    background-color: rgb(67, 67, 67);
+    width: auto;
+    height: auto;
+    border-bottom: rgb(27, 25, 25) 4px solid;
+}
+
+.textoNoticias h1 {
+    color: white;
+    padding-top: 10px;
+}
+
+.boxNoticias {
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 46%;
+    margin: 20px;
+    border: 2px solid rgb(114, 114, 114);
+    float: left;
+    border-radius: 7px;
+    justify-content: center;
+    display: flex;
+    padding: 2px;
+}
+
+.fotoNoticia {
+    width: 150px;
+    width: 150px;
+    align-items: left;
+    text-align: left;
+    padding-right: 25px;
+    padding: 5px;
+}
+
+.fotoNoticia img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+/* Fim Content */
+
+
+/* Footer */
+
+.footer {
+position: static;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: white;
+color: black;
+text-align: center;
+border-top: black 2px solid;
+font-family: 'Kanit', sans-serif;
+
+}
+
+.footerLogo {
+    text-align: center;
+    overflow: auto;
+}
+
+.footerLogo img {
+    width: 250px;
+    margin-top: 5px;
+}
+
+.footerLogo p {
+    margin-top: -25px;
+    font-size: larger;
+}
+
+/* Fim Footer */
+
+/* Login/Registro */
+
+.loginContent {
+    justify-content: center;
+    display: flex;
+}
+
+.loginBox {
+    height: 500px;
+    width: 600px;
+    border: rgb(119, 119, 119) 6px solid;
+    background-color: rgb(255, 253, 253);
+    margin: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.loginBox form {
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loginBox h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.loginBox input[type=username],
+.loginBox input[type=email],
+.loginBox input[type=password] {
+    width: 70%;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.loginBox input[type=submit] {
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.loginBox a {
+    color: rgb(61, 61, 61);
+}
+
+.loginBox a:hover {
+    color: black;
+}
+
+.btn_login {
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Login/Registro */
+
+/* User area */
+
+.sobre {
+    justify-content: center;
+    display: flex;
+}
+
+.sobreContent {
+    height: auto;
+    width: 1000px;
+    border: rgb(174, 174, 174) 4px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.textoSobre {
+    height: 625px;
+    width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 12px;
+}
+
+.textoSobre img {
+    width: 300px;
+}
+
+.textoSobre p {
+    font-size: 1.5rem;
+}
+
+/* User area end */
+
+/* send-recipe */
+
+.sendRecipe {
+    justify-content: center;
+    display: flex;
+}
+
+.sendRecipeBox{
+    height: auto;
+    width: 650px;
+    border: rgb(174, 174, 174) 4px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.recipeName {
+    width: 60%;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    text-align: center;
+}
+
+.ingredients {
+    width: 60%;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.instruction {
+    width: 60%;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.btnSend {
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* send-recipe end */
+
+
+/* receitas */
+
+.receita {
+    justify-content: center;
+    display: flex;
+}
+
+.areaReceita{
+    height: auto;
+    width: 950px;
+    border: rgb(136, 135, 135) 4px solid;
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.capaReceita {
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 266px;
+    width: 400px;
+    float: left;
+}
+
+.capaReceita img {
+    width: 400px;
+    height: 266px;
+}
+
+.infoBox {
+    float: right;
+    border: 2px solid black;
+    height: 266px;
+    width: 530px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.nomeReceita {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.tempoPreparo {
+    height: auto;
+    width: 45%;
+    text-align: center;
+    float: left;
+    padding-top: 65px;
+    align-items: center;
+}
+
+.dificuldade {  
+    height: auto;
+    width: 45%;
+    text-align: center;
+    float: right;
+    padding-top: 65px;
+}
+
+.tempoPreparo img {
+    height: 50px;
+    padding-top: 5px;
+}
+
+.dificuldade img {
+    height: 55px;
+    padding-top:5px;
+}
+
+.ingredientes {
+    float: left;
+    border: 2px solid black;
+    height: auto;
+    width: 400px;
+    text-align: start;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.modoDePreparo {
+    float: right;
+    border: 2px solid black;
+    height: auto;
+    width: 530px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+/* end receitas */
+
+/* error 404 */
+
+.error404 {
+    display: flex;
+    justify-content: center;
+}
+
+.error404area {
+    height: auto;
+    width: auto;
+    background-color: rgb(242, 234, 234);
+    border: 3px solid rgb(124, 123, 123);
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* error 404 end */

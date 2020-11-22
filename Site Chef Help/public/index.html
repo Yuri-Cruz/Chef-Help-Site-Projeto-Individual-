@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <title>Chef Help </title>
+
+</head>
+
+<body style="background-image: url(img/fundosite.jpg);">
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+        <div class="container">
+
+            <div class="divLogo"></div>
+            <img class="logo" src="img/logo-site.png">
+        </div>
+
+        <div class="search-box">
+            <input id="in_pesquisa" class="search-txt" type="text" placeholder="Encontre uma receita">
+            <a class="search-btn">
+                <i class="fas fa-search" onclick="search()"></i>
+            </a>
+        </div>
+
+        <div class="item-box">
+            <a href="login.html"><img src="img/login-icon.png"></a>
+            <p>Entrar</p>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!-- Contents -->
+
+    <div class="content">
+        <div class="contentElements">
+            <div class="box-slide">
+                <h2>Pratos mais Visitados</h2>
+                <div class="pratos">
+                    <div> <a href="recipes/frango.html"><img src="img/carrosel-imgs/pratos1.jpg" alt=""></a>
+                        <h2>Frango a parmegiana</h2>
+                        <p>Um dos pratos mais amados<br>pelo brasileiro</p>
+                    </div>
+                    <div><a href="recipes/panqueca.html"><img src="img/carrosel-imgs/pratos2.jpg" alt=""></a>
+                        <h2>Panqueca de carne móida</h2>
+                        <p>Um clássico no almoço<br>de fim de semana!</p>
+                    </div>
+                    <div><a href="recipes/strogonoff.html"><img src="img/carrosel-imgs/pratos3.jpg" alt=""></a>
+                        <h2>Strogonoff de Frango</h2>
+                        <p>Um prato que nunca falta na casa do brasileiro</p>
+                    </div>
+                    <div><a href="recipes/ovo.html"><img src="img/carrosel-imgs/pratos4.jpg" alt=""></a>
+                        <h2>Ovo Frito</h2>
+                        <p>Sempre quando não há o que comer,<br>tem um ovo na geladeira para nos salvar!</p>
+                    </div>
+                    <div><a href="recipes/batata.html"><img src="img/carrosel-imgs/pratos5.jpg" alt=""></a>
+                        <h2>Batata Gratinada</h2>
+                        <p>Existe vários tipos de receita com batatas, e a gratinada é uma das melhores</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-slide">
+                <h2>Doces mais Visitadas</h2>
+                <div class="pratos">
+                    <div><a href="recipes/pave.html"><img src="img/carrosel-imgs/sobremesas1.jpg" alt=""></a>
+                        <h2>Pavê de Chocolate</h2>
+                        <p>Como sempre diz o meu tio na ceia de final de ano: "É pavê ou "pacume"?</p>
+                    </div>
+                    <div><a href="recipes/bolocenoura.html"><img src="img/carrosel-imgs/sobremesas2.jpg" alt=""></a>
+                        <h2>Bolo de Cenoura</h2>
+                        <p>Uma ótima sobremesa após uma refeição em familía.</p>
+                    </div>
+                    <div><a href="recipes/mousse.html"><img src="img/carrosel-imgs/sobremesas3.jpg" alt=""></a>
+                        <h2>Mousse de Leite Ninho</h2>
+                        <p>Sobremesa para quem está fazendo dieta, leve e delicioso!</p>
+                    </div>
+                    <div><a href="recipes/bolinhochuva.html"><img src="img/carrosel-imgs/sobremesas4.jpg" alt=""></a>
+                        <h2>Bolinho de Chuva</h2>
+                        <p>Uma sobremesa perfeita com café.</p>
+                    </div>
+                    <div><a href="recipes/brigadeiro.html"><img src="img/carrosel-imgs/sobremesas5.jpg" alt=""></a>
+                        <h2>Brigadeiro</h2>
+                        <p>Quem nunca comeu um brigadeiro? Nunca falta em uma festa de aniversário.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-slide">
+                <h2>Lanches mais visitados</h2>
+                <div class="pratos">
+                    <div><a href="recipes/coxinha.html"><img src="img/carrosel-imgs/salgados1.jpg" alt=""></a>
+                        <h2>Coxinha de Frango</h2>
+                        <p>Quem nunca comeu uma coxinha na rua ou em uma festa? Um dos favoritos do brasileiro</p>
+                    </div>
+                    <div><a href="recipes/kibe.html"><img src="img/carrosel-imgs/salgados2.jpg" alt=""></a>
+                        <h2>Kibe</h2>
+                        <p>Delicioso e uma ótima combinação com a coxinha!</p>
+                    </div>
+                    <div><a href="recipes/torta.html"><img src="img/carrosel-imgs/salgados3.jpg" alt=""></a>
+                        <h2>Torta de Liquidificador</h2>
+                        <p>Uma massa perfeita para um café da tarde em familía</p>
+                    </div>
+                    <div><a href="recipes/pao.html"><img src="img/carrosel-imgs/salgados4.jpg" alt=""></a>
+                        <h2>Pão com Manteiga</h2>
+                        <p>Um lanche padrão no café da manhã do brasileiro, e bem acompanhando com um café ou leite!</p>
+                    </div>
+                    <div><a href="recipes/pizza.html"><img src="img/carrosel-imgs/salgados5.jpg" alt=""></a>
+                        <h2>Pizza de Pepperoni</h2>
+                        <p>Um lanche clássico durante o happy hour, o mundo inteiro ama!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="noticias">
+        <div class="noticiasArea">
+            <div class="textoNoticias">
+                <h1>Notícias Chef Help</h1>
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/foto-jacquin.jpg">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>Jacquin sobre Globo: ‘Querem imitar o MasterChef, mas não conseguem’</h3>
+                    <p>Chef alfinetou 'Mestre do Sabor', nova atração culinária da emissora carioca, e ironizou
+                        comparações com Troisgros: 'Jacquin só existe um'
+                    </p>
+                </div>
+
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/robo-chef.jpg">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>
+                        Conheça Flippy, o robô-chapeiro que faz 150 hambúrgueres por hora</h3>
+                    <p>As máquinas já substituíram trabalhadores humanos em diversas funções
+                        Agora, elas vão conseguir emprego também nas lanchonetes.</p>
+                </div>
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/food-advisor.png">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>Foodvisor: aplicativo controla automaticamente o que você come</h3>
+                    <p>Foodvisor é um aplicativo que promete manter um controle do que você está comendo e assim te
+                        ajudar a manter uma vida mais saudável. </p>
+                </div>
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/pessoa-cozinhando.jpg">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>Dicas para quem quer aprender a cozinhar</h3>
+                    <p>Aprender a cozinhar é uma habilidade indispensável para uma vida mais independente e mais
+                        saudável. Desta forma, você não depende de alimentos pré-prontos industrializados e nem de
+                        delivery para ter uma refeição gostosa.</p>
+                </div>
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/pessoa-tirando-foto.jpg">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>Como o Instagram está afetando a gastronomia no mundo</h3>
+                    <p>O peso do Instagram se tornou tamanho para os restaurantes e outros estabelecimentos que
+                        comercializam alimentos,
+                        fazendo-os aprimorar o seu ambiente, para atrair novos visitantes.</p>
+                </div>
+            </div>
+            <div class="boxNoticias">
+                <div class="fotoNoticia">
+                    <img src="img/noticias-imgs/pizza-domino.jpg">
+                </div>
+                <div class="notificiaInfo">
+                    <h3>
+                        Domino's vai usar GPS para saber quando colocar sua pizza no forno</h3>
+                    <p>o aplicativo de rastreamento da rede vai indicar quando você está chegando para pegar sua pizza
+                        e, assim, colocá-la para assar na hora certa.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- End Contents -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footerLogo">
+                <img src="img/logo-site.png">
+                <p>&copy; Copyright Chef Help 2020 - Todos os Direitos Reservados</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer End -->
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
+
+<script>
+
+    function search() {
+        var pesquisa = in_pesquisa.value;
+
+        if (pesquisa == 'frango' || pesquisa == 'frango a parmegiana' || pesquisa == 'parmegiana') {
+            window.location.href = 'recipes/frango.html';
+        } else if (pesquisa == 'panqueca' || pesquisa == 'panqueca de carne moida') {
+            window.location.href = 'recipes/panqueca.html';
+        } else if (pesquisa == 'strogonoff' || pesquisa == 'strogonoff de frango') {
+            window.location.href = 'recipes/strogonoff.html';
+        } else if (pesquisa == 'ovo' || pesquisa == 'ovo frito') {
+            window.location.href = 'recipes/ovo.html';
+        } else if (pesquisa == 'batata gratinada' || pesquisa == 'batata') {
+            window.location.href = 'recipes/batata.html';
+        } else if (pesquisa == 'pavê' || pesquisa == 'pave' || pesquisa == 'pavê de chocolate' || pesquisa == 'pave de chocolate') {
+            window.location.href = 'recipes/pave.html';
+        } else if (pesquisa == 'bolo de cenoura' || pesquisa == 'bolo') {
+            window.location.href = 'recipes/bolocenoura.html';
+        } else if (pesquisa == 'mousse' || pesquisa == 'mousse de leite ninho') {
+            window.location.href = 'recipes/mousse.html';
+        } else if (pesquisa == 'bolinho de chuva' || pesquisa == 'bolinho') {
+            window.location.href = 'recipes/bolinhochuva.html';
+        } else if (pesquisa == 'brigadeiro') {
+            window.location.href = 'recipes/brigadeiro.html';
+        } else if (pesquisa == 'coxinha' || pesquisa == 'coxinha de frango') {
+            window.location.href = 'recipes/coxinha.html';
+        } else if (pesquisa == 'kibe') {
+            window.location.href = 'recipes/kibe.html';
+        } else if (pesquisa == 'torta' || pesquisa == 'torta de liquidificador') {
+            window.location.href = 'recipes/kibe.html';
+        } else if (pesquisa == 'pão com manteiga' || pesquisa == 'pao' || pesquisa == 'pao com manteiga' || pesquisa == 'pão') {
+            window.location.href = 'recipes/pao.html';
+        } else if (pesquisa == 'pizza' || pesquisa == 'pizza de pepperoni') {
+            window.location.href = 'recipes/pizza.html';
+        } else {
+            window.location.href = 'error404.html'
+        }
+    }
+
+</script>
