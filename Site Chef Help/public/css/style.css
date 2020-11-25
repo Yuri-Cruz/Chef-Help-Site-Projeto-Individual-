@@ -290,7 +290,7 @@ font-family: 'Kanit', sans-serif;
     height: 500px;
     width: 600px;
     border: rgb(119, 119, 119) 6px solid;
-    background-color: rgb(255, 253, 253);
+    background-color: rgb(242, 239, 239);
     margin: 20px;
     border-radius: 10px;
     justify-content: center;
@@ -303,7 +303,7 @@ font-family: 'Kanit', sans-serif;
     padding: 20px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -357,6 +357,8 @@ font-family: 'Kanit', sans-serif;
     border-radius: 20px;
     font-family: 'Kanit', sans-serif;
 }
+
+
 
 /* Login/Registro */
 
