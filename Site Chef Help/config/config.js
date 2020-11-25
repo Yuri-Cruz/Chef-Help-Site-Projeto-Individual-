@@ -1,10 +1,10 @@
 module.exports = {
   production: {
-    username: 'araut',
+    username: 'chefhelp',
     password: '#Gf48753827821',
-    database: 'testada',
-    host: 'localhost',
-    dialect: 'mysql',
+    database: 'Chef-Help',
+    host: 'chef-help.database.windows.net',
+    dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
       options: { 
