@@ -83,6 +83,15 @@ body {
      margin: 0;
 }
 
+.item-box h3 {
+    margin-top: 15px;
+    margin-right: 45px;
+}
+
+.item-box b {
+    color: blue;
+}
+
 .search-box {
     position: absolute;
     top: 49px;

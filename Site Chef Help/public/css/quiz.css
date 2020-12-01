@@ -1,0 +1,25 @@
+.quiz {
+justify-content: center;
+    display: flex;
+}
+
+.quizContent {
+    height: auto;
+    width: auto;
+    border: rgb(174, 174, 174) 4px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.areaQuiz {
+    height: 625px;
+    width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 12px;
+}
