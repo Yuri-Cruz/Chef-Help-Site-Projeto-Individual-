@@ -9,19 +9,18 @@ let sessoes = [];
 router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por email e senha');
 
-	var login = req.body.email; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var login = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
-	let instrucaoSql = `select * from usuario where email='${login}' and senha='${senha}'`;
+	let instrucaoSql = `select * from usuario where nomeUsuario='${login}' and senha='${senha}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
 		model: Usuario
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`); 
-
 		if (resultado.length == 1) {
-			sessoes.push(resultado[0].dataValues.email);
+			sessoes.push(resultado[0].dataValues.nomeUsuario);
 			console.log('sessoes: ',sessoes);
 			res.json(resultado[0]);
 		} else if (resultado.length == 0) {
@@ -41,7 +40,7 @@ router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	Usuario.create({
-		nomeUsuario : req.body.username,
+		nomeUsuario : req.body.login,
 		email : req.body.email,
 		senha: req.body.senha
 	}).then(resultado => {
@@ -80,16 +79,16 @@ router.get('/sessao/:login', function(req, res, next) {
 
 /* Logoff de usuário */
 router.get('/sair/:login', function(req, res, next) {
-	let email = req.params.email;
-	console.log(`Finalizando a sessão do usuário ${email}`);
+	let login = req.params.login;
+	console.log(`Finalizando a sessão do usuário ${login}`);
 	let nova_sessoes = []
 	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] != email) {
+		if (sessoes[u] != login) {
 			nova_sessoes.push(sessoes[u]);
 		}
 	}
 	sessoes = nova_sessoes;
-	res.send(`Sessão do usuário ${email} finalizada com sucesso!`);
+	res.send(`Sessão do usuário ${login} finalizada com sucesso!`);
 });
 
 

@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <title>Chef Help </title>
 
 </head>
@@ -24,7 +19,7 @@
 
             <div class="divLogo"></div>
             <a href="index.html"><img class="logo" src="img/logo-site.png"></a>
-        </div>  
+        </div>
 
         <div class="search-box">
             <input id="in_pesquisa" class="search-txt" type="text" placeholder="Encontre uma receita">
@@ -34,11 +29,11 @@
         </div>
 
         <div class="item-box">
-            <a href="login.html"><img src="img/login-icon.png"></a> 
-             <p>Entrar</p>
-         </div>
+            <a href="login.html"><img src="img/login-icon.png"></a>
+            <p>Entrar</p>
+        </div>
 
-         <div class="item-box">
+        <div class="item-box">
             <a href="../index.html"><img src="../img/pagina-inicial.png"></a>
             <p>Pagina Inicial</p>
         </div>
@@ -47,7 +42,7 @@
     </div>
 
     <div class="error404">
-        <div class="error404area">     
+        <div class="error404area">
             <img src="img/erro404.png">
         </div>
     </div>
@@ -71,7 +66,7 @@
 
     function search() {
         var pesquisa = in_pesquisa.value;
-        
+
         if (pesquisa == 'frango' || pesquisa == 'frango a parmegiana' || pesquisa == 'parmegiana') {
             window.location.href = 'recipes/frango.html';
         } else if (pesquisa == 'panqueca' || pesquisa == 'panqueca de carne moida') {

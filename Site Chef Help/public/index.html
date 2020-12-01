@@ -5,18 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-    <title>Chef Help </title>
+    <title>Chef Help</title>
 
 </head>
 
-<body style="background-image: url(img/fundosite.jpg);">
+<body onload="(pratosStart())" style="background-image: url(img/fundosite.jpg);">
 
     <!-- Navbar -->
 
@@ -51,25 +46,9 @@
             <div class="box-slide">
                 <h2>Pratos mais Visitados</h2>
                 <div class="pratos">
-                    <div> <a href="recipes/frango.html"><img src="img/carrosel-imgs/pratos1.jpg" alt=""></a>
-                        <h2>Frango a parmegiana</h2>
-                        <p>Um dos pratos mais amados<br>pelo brasileiro</p>
-                    </div>
-                    <div><a href="recipes/panqueca.html"><img src="img/carrosel-imgs/pratos2.jpg" alt=""></a>
-                        <h2>Panqueca de carne móida</h2>
-                        <p>Um clássico no almoço<br>de fim de semana!</p>
-                    </div>
-                    <div><a href="recipes/strogonoff.html"><img src="img/carrosel-imgs/pratos3.jpg" alt=""></a>
-                        <h2>Strogonoff de Frango</h2>
-                        <p>Um prato que nunca falta na casa do brasileiro</p>
-                    </div>
-                    <div><a href="recipes/ovo.html"><img src="img/carrosel-imgs/pratos4.jpg" alt=""></a>
-                        <h2>Ovo Frito</h2>
-                        <p>Sempre quando não há o que comer,<br>tem um ovo na geladeira para nos salvar!</p>
-                    </div>
-                    <div><a href="recipes/batata.html"><img src="img/carrosel-imgs/pratos5.jpg" alt=""></a>
-                        <h2>Batata Gratinada</h2>
-                        <p>Existe vários tipos de receita com batatas, e a gratinada é uma das melhores</p>
+                    <div> <a id="ancoragem" href="img/carrosel-imgs/pratos1.jpg"><img id='pratosImg' src="" alt=""></a>
+                        <h2 id="pratosTitulo">Frango a parmegiana</h2>
+                        <p id="pratosDesc">Um dos pratos mais amados<br>pelo brasileiro</p>
                     </div>
                 </div>
             </div>
@@ -77,25 +56,10 @@
             <div class="box-slide">
                 <h2>Doces mais Visitadas</h2>
                 <div class="pratos">
-                    <div><a href="recipes/pave.html"><img src="img/carrosel-imgs/sobremesas1.jpg" alt=""></a>
-                        <h2>Pavê de Chocolate</h2>
-                        <p>Como sempre diz o meu tio na ceia de final de ano: "É pavê ou "pacume"?</p>
-                    </div>
-                    <div><a href="recipes/bolocenoura.html"><img src="img/carrosel-imgs/sobremesas2.jpg" alt=""></a>
-                        <h2>Bolo de Cenoura</h2>
-                        <p>Uma ótima sobremesa após uma refeição em familía.</p>
-                    </div>
-                    <div><a href="recipes/mousse.html"><img src="img/carrosel-imgs/sobremesas3.jpg" alt=""></a>
-                        <h2>Mousse de Leite Ninho</h2>
-                        <p>Sobremesa para quem está fazendo dieta, leve e delicioso!</p>
-                    </div>
-                    <div><a href="recipes/bolinhochuva.html"><img src="img/carrosel-imgs/sobremesas4.jpg" alt=""></a>
-                        <h2>Bolinho de Chuva</h2>
-                        <p>Uma sobremesa perfeita com café.</p>
-                    </div>
-                    <div><a href="recipes/brigadeiro.html"><img src="img/carrosel-imgs/sobremesas5.jpg" alt=""></a>
-                        <h2>Brigadeiro</h2>
-                        <p>Quem nunca comeu um brigadeiro? Nunca falta em uma festa de aniversário.</p>
+                    <div><a id="ancoragem2" href="recipes/pave.html"><img id="doceImg"
+                                src="img/carrosel-imgs/sobremesas1.jpg" alt=""></a>
+                        <h2 id="doceTitulo">Pavê de Chocolate</h2>
+                        <p id="doceDesc">Como sempre diz o meu tio na ceia de final de ano: "É pavê ou "pacume"?</p>
                     </div>
                 </div>
             </div>
@@ -103,25 +67,11 @@
             <div class="box-slide">
                 <h2>Lanches mais visitados</h2>
                 <div class="pratos">
-                    <div><a href="recipes/coxinha.html"><img src="img/carrosel-imgs/salgados1.jpg" alt=""></a>
-                        <h2>Coxinha de Frango</h2>
-                        <p>Quem nunca comeu uma coxinha na rua ou em uma festa? Um dos favoritos do brasileiro</p>
-                    </div>
-                    <div><a href="recipes/kibe.html"><img src="img/carrosel-imgs/salgados2.jpg" alt=""></a>
-                        <h2>Kibe</h2>
-                        <p>Delicioso e uma ótima combinação com a coxinha!</p>
-                    </div>
-                    <div><a href="recipes/torta.html"><img src="img/carrosel-imgs/salgados3.jpg" alt=""></a>
-                        <h2>Torta de Liquidificador</h2>
-                        <p>Uma massa perfeita para um café da tarde em familía</p>
-                    </div>
-                    <div><a href="recipes/pao.html"><img src="img/carrosel-imgs/salgados4.jpg" alt=""></a>
-                        <h2>Pão com Manteiga</h2>
-                        <p>Um lanche padrão no café da manhã do brasileiro, e bem acompanhando com um café ou leite!</p>
-                    </div>
-                    <div><a href="recipes/pizza.html"><img src="img/carrosel-imgs/salgados5.jpg" alt=""></a>
-                        <h2>Pizza de Pepperoni</h2>
-                        <p>Um lanche clássico durante o happy hour, o mundo inteiro ama!</p>
+                    <div><a id="ancoragem3" href="recipes/coxinha.html"><img id="salgImg"
+                                src="img/carrosel-imgs/salgados1.jpg" alt=""></a>
+                        <h2 id="salgTitulo">Coxinha de Frango</h2>
+                        <p id="salgDesc">Quem nunca comeu uma coxinha na rua ou em uma festa? Um dos favoritos do
+                            brasileiro</p>
                     </div>
                 </div>
             </div>
@@ -221,7 +171,6 @@
 
     <!-- Footer End -->
 
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>
@@ -229,6 +178,142 @@
 </html>
 
 <script>
+
+    var slide = 5000
+
+    // Pratos //
+
+    function pratosStart() {
+        frango();
+        pave();
+        coxinha();
+    }
+
+    function frango() {
+        pratosImg.src = "img/carrosel-imgs/pratos1.jpg";
+        pratosTitulo.innerHTML = "Frango a Parmegiana";
+        pratosDesc.innerHTML = "Um dos pratos mais amados<br>pelo brasileiro";
+        ancoragem.href = "recipes/frango.html";
+        setTimeout('panqueca()', slide);
+    }
+
+    function panqueca() {
+        pratosImg.src = "img/carrosel-imgs/pratos2.jpg";
+        pratosTitulo.innerHTML = "Panqueca de carne móida";
+        pratosDesc.innerHTML = "Um clássico no almoço<br>de fim de semana!";
+        ancoragem.href = "recipes/panqueca.html";
+        setTimeout('strogonoff()', slide);
+    }
+
+    function strogonoff() {
+        pratosImg.src = "img/carrosel-imgs/pratos3.jpg";
+        pratosTitulo.innerHTML = "Strogonoff de Frango";
+        pratosDesc.innerHTML = "Um prato que nunca falta na casa do brasileiro";
+        ancoragem.href = "recipes/strogonoff.html";
+        setTimeout('ovo()', slide);
+    }
+
+    function ovo() {
+        pratosImg.src = "img/carrosel-imgs/pratos4.jpg";
+        pratosTitulo.innerHTML = "Ovo Frito";
+        pratosDesc.innerHTML = "Sempre quando não há o que comer,<br>tem um ovo na geladeira para nos salvar!";
+        ancoragem.href = "recipes/ovo.html";
+        setTimeout('batata()', slide);
+    }
+
+    function batata() {
+        pratosImg.src = "img/carrosel-imgs/pratos5.jpg";
+        pratosTitulo.innerHTML = "Batata Gratinada";
+        pratosDesc.innerHTML = "Existe vários tipos de receita com batatas, e a gratinada é uma das melhores";
+        ancoragem.href = "recipes/batata.html";
+        setTimeout('frango()', slide);
+    }
+
+    // Doces //
+
+    function pave() {
+        doceImg.src = "img/carrosel-imgs/sobremesas1.jpg";
+        doceTitulo.innerHTML = "Pavê de Chocolate";
+        doceDesc.innerHTML = "Como sempre dizem na ceia de final de ano: 'É pavê ou' 'pacume'?";
+        ancoragem2.href = "recipes/pave.html";
+        setTimeout('bolo()', slide);
+    }
+
+    function bolo() {
+        doceImg.src = "img/carrosel-imgs/sobremesas2.jpg";
+        doceTitulo.innerHTML = "Bolo de Cenoura";
+        doceDesc.innerHTML = "Uma ótima sobremesa após uma refeição em familía";
+        ancoragem2.href = "recipes/bolocenoura.html";
+        setTimeout('mousse()', slide);
+    }
+
+    function mousse() {
+        doceImg.src = "img/carrosel-imgs/sobremesas3.jpg";
+        doceTitulo.innerHTML = "Mousse de Leite Ninho";
+        doceDesc.innerHTML = "Sobremesa para quem está fazendo dieta, leve e delicioso!";
+        ancoragem2.href = "recipes/mousse.html";
+        setTimeout('bolinho()', slide);
+    }
+
+    function bolinho() {
+        doceImg.src = "img/carrosel-imgs/sobremesas4.jpg";
+        doceTitulo.innerHTML = "Bolinho de Chuva";
+        doceDesc.innerHTML = "Uma sobremesa perfeita com café.";
+        ancoragem2.href = "recipes/bolinhochuva.html";
+        setTimeout('brigadeiro()', slide);
+    }
+
+    function brigadeiro() {
+        doceImg.src = "img/carrosel-imgs/sobremesas5.jpg";
+        doceTitulo.innerHTML = "Brigadeiro";
+        doceDesc.innerHTML = "Quem nunca comeu um brigadeiro? Nunca falta em uma festa de aniversário.";
+        ancoragem2.href = "recipes/brigadeiro.html";
+        setTimeout('pave()', slide);
+    }
+
+    // Salgados //
+
+    function coxinha() {
+        salgImg.src = "img/carrosel-imgs/salgados1.jpg";
+        salgTitulo.innerHTML = "Coxinha de Frango";
+        salgDesc.innerHTML = "Quem nunca comeu uma coxinha na rua ou em uma festa? Um dos favoritos do brasileiro.";
+        ancoragem3.href = "recipes/coxinha.html";
+        setTimeout('kibe()', slide);
+    }
+
+    function kibe() {
+        salgImg.src = "img/carrosel-imgs/salgados2.jpg";
+        salgTitulo.innerHTML = "Kibe";
+        salgDesc.innerHTML = "Delicioso e uma ótima combinação com coxinha.";
+        ancoragem3.href = "recipes/kibe.html";
+        setTimeout('torta()', slide);
+    }
+
+    function torta() {
+        salgImg.src = "img/carrosel-imgs/salgados3.jpg";
+        salgTitulo.innerHTML = "Torta de Liquidificador";
+        salgDesc.innerHTML = "Uma massa perfeita para um café da tarde em familía!";
+        ancoragem3.href = "recipes/torta.html";
+        setTimeout('pao()', slide);
+    }
+
+    function pao() {
+        salgImg.src = "img/carrosel-imgs/salgados4.jpg";
+        salgTitulo.innerHTML = "Pão com Manteiga";
+        salgDesc.innerHTML = "Um lanche padrão no café da manhã do brasileiro, e bem acompanhando com um café ou leite!";
+        ancoragem3.href = "recipes/pao.html";
+        setTimeout('pizza()', slide);
+    }
+
+    function pizza() {
+        salgImg.src = "img/carrosel-imgs/salgados5.jpg";
+        salgTitulo.innerHTML = "Pizza de Pepperoni";
+        salgDesc.innerHTML = "Um lanche clássico durante o happy hour, o mundo inteiro ama!";
+        ancoragem3.href = "recipes/pizza.html";
+        setTimeout('coxinha()', slide);
+    }
+
+    // Search Bar //
 
     function search() {
         var pesquisa = in_pesquisa.value;

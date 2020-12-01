@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <title>Chef Help </title>
 
 </head>
@@ -41,19 +36,20 @@
     </div>
 
     <div class="loginContent">
-        <div class="loginBox">     
+        <div class="loginBox">
             <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                <br> <br> 
-                <h1>Faça o seu Cadastro</h1> 
-                <input id="user" type="username" name="username" autofocus="autofocus" placeholder="Nome de Usuário" required minlength="4">
+                <br> <br>
+                <h1>Faça o seu Cadastro</h1>
+                <input id="user" type="username" name="login" autofocus="autofocus" placeholder="Nome de Usuário"
+                    required minlength="4">
                 <input id="e-mail" type="email" name="email" placeholder="E-mail" required minlength="6">
                 <input id="password" type="password" name="senha" placeholder="Senha" required minlength="4">
-                <input type="submit" id="btn_entrar" name="confirmar" value="cadastrar"> <br> <br> 
+                <input type="submit" id="btn_entrar" name="confirmar" value="cadastrar"> <br> <br>
                 <div id="div_erro" style="background-color: #aeaeae; color: rgb(0, 0, 0); display: none;">
                     Erro no cadastro, tente novamente.
-                </div>       
+                </div>
             </form>
-            
+
         </div>
     </div>
 
@@ -68,7 +64,7 @@
 
     </div>
 
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="js/scripts.js"></script>
 
 </body>
@@ -84,10 +80,10 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
+
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href = 'login.html';
 
             } else {
 
@@ -104,12 +100,12 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        div_erro.style.display='none';
+        div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        div_erro.style.display='block';
+        div_erro.style.display = 'block';
     }
 
 </script>

@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <title>Chef Help </title>
 
 </head>
@@ -24,7 +19,7 @@
 
             <div class="divLogo"></div>
             <a href="index.html"><img class="logo" src="img/logo-site.png"></a>
-        </div>  
+        </div>
 
         <div class="item-box">
             <a href="index.html"><img src="img/pagina-inicial.png"></a>
@@ -35,17 +30,19 @@
     </div>
 
     <div class="loginContent">
-        <div class="loginBox">     
+        <div class="loginBox">
             <form id="form_login" onsubmit="return entrar()">
                 <br> <br>
                 <h1>Acesse a sua Conta</h1>
-                <input id="e-mail" type="email" name="email" placeholder="E-mail">
+                <input id="e-mail" type="username" name="login" placeholder="Nome de usuario">
                 <input id="password" type="password" name="senha" placeholder="Senha">
                 <div id="div_erro" style="background-color: #aeaeae; color: rgb(0, 0, 0); display: none;">
-                    E-mail ou Senha incorreto(s)
+                    Usuario ou Senha incorreto(s)
                 </div> <br>
-                <button id="btn_entrar" class="btn_login">Entrar</button> <br> <br> 
-                <a href="cadastro.html"><h3>Criar uma Conta</h3></a>
+                <button id="btn_entrar" class="btn_login">Entrar</button> <br> <br>
+                <a href="cadastro.html">
+                    <h3>Criar uma Conta</h3>
+                </a>
             </form>
         </div>
     </div>
@@ -68,7 +65,7 @@
 <script>
 
 
-function entrar() {
+    function entrar() {
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -80,7 +77,7 @@ function entrar() {
                 resposta.json().then(json => {
 
                     sessionStorage.login_usuario_meuapp = json.email;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.nome_usuario_meuapp = json.nomeUsuario;
                     window.location.href = 'sobre.html';
                 });
 
@@ -104,7 +101,7 @@ function entrar() {
 
     function aguardar() {
         btn_entrar.disabled = true;
-  
+
     }
 
     function finalizar_aguardar(resposta) {

@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2254e96093.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type='text/javascript' src="js/funcoes.js"></script>
 
     <title>Chef Help </title>
 
 </head>
 
-<body style="background-image: url(img/fundosite.jpg);">
+<script>
 
- <!-- Navbar -->
+    let usuario;
+    verificar_autenticacao();
+
+</script>
+
+<body onload="verificar_autenticacao()" style="background-image: url(img/fundosite.jpg);">
+
+    <!-- Navbar -->
 
     <div class="navbar">
         <div class="container">
@@ -29,7 +33,7 @@
 
 
         <div class="item-box">
-           <a href="index.html"><img src="img/logout.ico"></a> 
+            <img onclick="logoff()" src="img/logout.ico">
             <p>Sair</p>
         </div>
 
@@ -38,7 +42,9 @@
             <p>Enviar Receita</p>
         </div>
 
-        
+        <div class="item-box">
+            <h3>Olá, <b id="b_usuario"></b>!</h3>
+        </div>
 
     </div>
     </div>
@@ -52,13 +58,19 @@
             <div class="textoSobre">
                 <img src="img/logo-site.png">
                 <h1>Sobre Nós</h1>
-                <p>A Chef Help nasceu de uma idéia de um aluno BandTec chamado Yuri, um jovem criativo amante da cozinha.
-                    Ele começou a aprender culinária ao seus 6 anos fazendo um simples arroz com a ajuda de sua mãe, e com o passar
-                    do tempo evoluiu o seu conhecimento e dominou novos pratos. Porém ele sempre compartilhava suas receitas 
-                    com a familia ou amigos, sempre gostava de ensinar aos outros o que sabia. Com o seus 18 anos entrou na
-                      faculdade e começou a fazer ADS (Análise e desenvolvimento de Sistemas), próximo do fim de seu 1º Semestre, decidiu
-                      criar o que tanto sonhava, um site de receitas culinárias para compartilhar tudo o que sabe, para pessoas do mundo todo.
-                      E voilá, aqui estamos agora!
+                <p>A Chef Help nasceu de uma idéia de um aluno BandTec chamado Yuri, um jovem criativo amante da
+                    cozinha.
+                    Ele começou a aprender culinária ao seus 6 anos fazendo um simples arroz com a ajuda de sua mãe, e
+                    com o passar
+                    do tempo evoluiu o seu conhecimento e dominou novos pratos. Porém ele sempre compartilhava suas
+                    receitas
+                    com a familia ou amigos, sempre gostava de ensinar aos outros o que sabia. Com o seus 18 anos entrou
+                    na
+                    faculdade e começou a fazer ADS (Análise e desenvolvimento de Sistemas), próximo do fim de seu 1º
+                    Semestre, decidiu
+                    criar o que tanto sonhava, um site de receitas culinárias para compartilhar tudo o que sabe, para
+                    pessoas do mundo todo.
+                    E voilá, aqui estamos agora!
                 </p>
             </div>
         </div>
@@ -71,16 +83,17 @@
                 Qual o nome de sua receita?: <br>
                 <input id='nomeReceita' class="recipeName" placeholder="Bolo de chocolate"> <br>
                 Ingredientes:<br>
-                <textarea id="ingredientes" cols="45" rows="10" class="ingredients" 
-                placeholder="3 ovos\n3 xícaras (chá) de Farinha de trigo\n1/2 xícara (chá) de óleo"></textarea> <br>
+                <textarea id="ingredientes" cols="45" rows="10" class="ingredients"
+                    placeholder="3 ovos\n3 xícaras (chá) de Farinha de trigo\n1/2 xícara (chá) de óleo"></textarea> <br>
                 Modo de preparo:<br>
-                <textarea id="modoPreparo" cols="45" rows="10" class="instruction" 
-                placeholder="Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.\nAcrescente o açúcar e bata novamente por 5 minutos etc"></textarea> <br>
+                <textarea id="modoPreparo" cols="45" rows="10" class="instruction"
+                    placeholder="Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.\nAcrescente o açúcar e bata novamente por 5 minutos etc"></textarea>
+                <br>
                 <input type="submit" id="btnEnviar" class="btnSend" onclick="enviar()">
             </form>
         </div>
     </div>
-    
+
 
     <!-- End Contents -->
 
@@ -98,7 +111,6 @@
 
     <!-- Footer End -->
 
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>
