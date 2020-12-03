@@ -34,7 +34,7 @@
             <form id="form_login" onsubmit="return entrar()">
                 <br> <br>
                 <h1>Acesse a sua Conta</h1>
-                <input id="e-mail" type="username" name="login" placeholder="Nome de usuario">
+                <input id="username" type="username" name="login" placeholder="Nome de usuario">
                 <input id="password" type="password" name="senha" placeholder="Senha">
                 <div id="div_erro" style="background-color: #aeaeae; color: rgb(0, 0, 0); display: none;">
                     Usuario ou Senha incorreto(s)
@@ -90,7 +90,6 @@
                     finalizar_aguardar(texto);
                     console.log('teste');
                     div_erro.style.display = 'block';
-                    tentativas - 1;
                 });
             }
         });
