@@ -3,6 +3,6 @@
 "version": "0.0.1",
 "private": true,
 "scripts": {
-"start": "node ./Site Chef Help/bin/www",
+"start": "node ./projeto-site/bin/www",
 "postinstall": "cd projeto-site && npm install"
 }
