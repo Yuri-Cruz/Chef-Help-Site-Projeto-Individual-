@@ -1,8 +1,12 @@
 {
-"name": "Chef-Help-Site-Projeto-Individual-",
+"name": "chef-help",
 "version": "0.0.1",
 "private": true,
 "scripts": {
 "start": "node ./projeto-site/bin/www",
 "postinstall": "cd projeto-site && npm install"
+},
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
 }
